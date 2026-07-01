@@ -265,7 +265,6 @@
             </button>
         </form>
 
-        <div class="login-hint"><i class="fas fa-circle-info me-1"></i> Demo: <strong>admin</strong> / <strong>admin123</strong></div>
 
         <p class="login-footer">© 2026 OfficeStock — UAS Pemrograman Web 2</p>
     </div>
