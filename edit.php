@@ -44,8 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               supplier=?, tanggal_pengadaan=?, foto_barang=?, status=?
               WHERE id_pengadaan=?";
     $stmt = mysqli_prepare($koneksi, $query);
-    mysqli_stmt_bind_param($stmt, "ssisdssss", $nama_barang, $kategori, $jumlah, $satuan, $harga_satuan, $supplier, $tanggal_pengadaan, $foto_barang, $status, $id_pengadaan);
-
+    mysqli_stmt_bind_param($stmt, "ssisdsssss", $nama_barang, $kategori, $jumlah, $satuan, $harga_satuan, $supplier, $tanggal_pengadaan, $foto_barang, $status, $id_pengadaan);
     if (mysqli_stmt_execute($stmt)) {
         header("Location: pengadaan.php?success=Data+pengadaan+ATK+berhasil+diperbarui!");
         exit();

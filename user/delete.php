@@ -24,7 +24,6 @@ if ($row && $row['username'] === $_SESSION['username']) {
     exit();
 }
 
-// Cegah menghapus user terakhir (minimal 1 akun harus tersisa)
 $total = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM tb_users"))[0];
 if ($total <= 1) {
     echo json_encode(['success' => false, 'message' => 'Tidak dapat menghapus, minimal harus ada 1 akun user!']);
