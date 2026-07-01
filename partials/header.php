@@ -366,7 +366,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
         <i class="fas fa-boxes-stacked"></i> Data Pengadaan ATK
     </a>
     <a href="/UAS_ATK/report.php" target="_blank">
-        <i class="fas fa-file-pdf"></i> Cetak Laporan PDF
+        <i class="fas fa-file-pdf"></i> Cetak Laporan
     </a>
     <div class="sidebar-section">Pengaturan</div>
     <a href="/UAS_ATK/user.php" <?php echo (basename($_SERVER['PHP_SELF']) == 'user.php') ? 'class="active"' : ''; ?>>
